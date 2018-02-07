@@ -7,7 +7,7 @@ import static java.lang.System.*;
 
 public class Line
 {
-	private int xOne, yOne, xTwo, yTwo; 
+	private double xOne, yOne, xTwo, yTwo; 
 	private double slope;
 
 	public Line(int x1, int y1, int x2, int y2)
@@ -28,6 +28,7 @@ public class Line
 
 	public void calculateSlope( )
 	{
+		
 		slope = (yTwo-yOne) / (xTwo-xOne);
 
 
