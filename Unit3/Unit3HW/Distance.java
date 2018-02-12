@@ -15,36 +15,37 @@ public class Distance
 
 	public Distance()
 	{
-
-
-
+		
+		
 	}
 
 	public Distance(int x1, int y1, int x2, int y2)
 	{
-
-
-
+		xOne = x1;
+		xTwo = x2;
+		yOne = y1;
+		yTwo = y2;
 	}
 
 	public void setCoordinates(int x1, int y1, int x2, int y2)
 	{
-
+		xOne = x1;
+		xTwo = x2;
+		yOne = y1;
+		yTwo = y2;
 
 
 	}
 
 	public void calcDistance()
 	{
-
+		distance = Math.sqrt ( Math.pow(xTwo-xOne, 2) - Math.pow(yTwo-yOne, 2) ); //error
 
 
 	}
 
 	public void print( )
 	{
-
-
-
+		out.println("distance:: " + String.format("%.3f\n", distance));
 	}
 }
